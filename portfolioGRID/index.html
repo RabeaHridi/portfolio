@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rabea Hridi's - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Name's Hridi!</h1>
+    <p>CSE Undergraduate Student</p>
+  </header>
+
+  <div id="container">
+
+    <div id="profile">
+      <img src="/ProfilePicture.jpg" alt="Hridi's Photo" width="100" height="100">
+      <div id="details">
+        <p><strong>Rabea Hridi</strong></p>
+        <p>Student, Computer Science and Engineering</p>
+        <p>Daffodil International University, Dhaka</p>
+      </div>
+    </div>
+
+    <div id="skills">
+      <h2>Skills</h2>
+      <p>MySQL, C, C++, HTML, CSS, JavaScript,</p>
+      <p>MS Word, Excel, PowerPoint, etc.</p>
+    </div>
+
+   
+
+    <div id="description">
+      <h2>About Me</h2>
+      <p> Hello Greetings!
+        My name is Hridi, Rabea Hridi. 
+        Currently I'm preserving my 
+        BSc Degree on Computer 
+        Science and Engineering at 
+        Daffodil International University. 
+        By 2025 I'll complete my graduation 
+        and hope to pursue my career on 
+        Government Service Sectors.</p>
+    </div>
+
+    <div id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <div class="project-card" onclick="toggleDetails('project1')">
+          Project 1
+          <div id="project1-details" class="project-details">
+            <p>Project 1 Details</p>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="toggleDetails('project2')">
+          Project 2
+          <div id="project2-details" class="project-details">
+            <p>Project 2 Details</p>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="toggleDetails('project3')">
+          Project 3
+          <div id="project3-details" class="project-details">
+            <p>Project 3 Details</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="academic">
+      <h2>Academic Qualification</h2>
+      <p>
+      <strong>Currently Studying</strong> <br>
+        BSc in Computer Science and Engineering, <br>
+        4th Year, <br>
+        Daffodil International University
+      </p>
+      <p>
+         <strong>H.S.C.</strong> <br>
+        Session: 2017-2019 <br>
+        Group: Science <br>
+        Ati-Vawal Uccho Maddhomik Biddaloy, Dhaka. <br>
+        Education Board: Dhaka
+      </p>
+
+      <p>
+        <strong>S.S.C.</strong> <br>
+        Session: 2015-2017 <br>
+        Group: Science <br>
+        Mirpur Govt. Girls High School, Dhaka. <br>
+        Education Board: Dhaka
+      </p>
+
+    </div>
+    
+
+    <div id="contact">
+      <h2>Contact</h2>
+      <div id="contact-container">
+        <div id="contact-text">
+          <p>I'm always interested in hearing about new projects, so if you'd like to chat, please get in touch.</p>
+        </div>
+        <div id="contact-form">
+          <form id="feedbackForm" action="process-form.php" method="post" onsubmit="validateForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Connect with me on:</p>
+    <a href="https://www.linkedin.com/rabeahridi" target="_blank"><i class="fab fa-linkedin"></i></a> |
+    <a href="https://github.com/RabeaHridi/" target="_blank"><i class="fab fa-github"></i></a> |
+    <a href="https://twitter.com/hridika4466/" target="_blank"><i class="fab fa-twitter"></i></a>
+  </footer>
+
+</body>
+</html>
